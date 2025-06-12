@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sum Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 50px;
+      text-align: center;
+    }
+    input {
+      padding: 8px;
+      margin: 10px;
+      width: 200px;
+      font-size: 16px;
+    }
+    button {
+      padding: 8px 16px;
+      font-size: 16px;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #2e7d32;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Sum Calculator</h2>
+
+  <input type="text" id="num1" placeholder="First number">
+  <input type="text" id="num2" placeholder="Second number">
+  <br>
+  <button onclick="calculateSum()">Add</button>
+
+  <div id="result"></div>
+
+  <script>
+    function calculateSum() {
+      // Get values from input fields
+      const a = document.getElementById('num1').value;
+      const b = document.getElementById('num2').value;
+
+      // Convert to numbers
+      const num1 = parseFloat(a);
+      const num2 = parseFloat(b);
+
+      // Check if valid numbers
+      if (isNaN(num1) || isNaN(num2)) {
+        document.getElementById('result').textContent = 'Please enter valid numbers.';
+      } else {
+        const sum = num1 + num2;
+        document.getElementById('result').textContent = `Sum: ${sum}`;
+      }
+    }
+  </script>
+
+</body>
+</html>

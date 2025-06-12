@@ -1,0 +1,36 @@
+* {
+  background-color: #f0f0f0; /* light gray */
+}
+
+/* 2. Element Selector */
+p {
+  color: darkblue;
+}
+
+/* 3. Class Selector */
+.intro {
+  color: green;
+  font-style: italic;
+}
+
+/* 4. ID Selector */
+#main-heading {
+  text-align: center;
+  color: red;
+}
+
+/* 5. Descendant Selector */
+.container p {
+  color: orange;
+}
+
+/* 6. Group Selector */
+h1, p {
+  font-family: Arial, sans-serif;
+}
+
+/* 7. Child Selector */
+ul > li {
+  list-style-type: circle;
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Simple Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    header, nav, main, section, article, aside, footer {
+      padding: 15px;
+      border: 1px solid #ccc;
+      margin: 10px;
+    }
+    nav a {
+      margin-right: 10px;
+    }
+    .container {
+      display: flex;
+    }
+    aside {
+      width: 25%;
+    }
+    section {
+      width: 75%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header: Site title and intro -->
+  <header>
+    <h1>My Simple Website</h1>
+    <p>Welcome to my simple webpage using semantic HTML5 elements!</p>
+  </header>
+
+  <!-- Navigation links -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- Main content area -->
+  <main>
+    <div class="container">
+     
+      <!-- Main content section with article -->
+      <section>
+        <h2>Latest Articles</h2>
+       
+        <!-- Article: standalone content -->
+        <article>
+          <h3>My First Blog Post</h3>
+          <p>This is an example of a blog post. Articles are used for independent content.</p>
+        </article>
+
+        <article>
+          <h3>Another Post</h3>
+          <p>This is another post. Articles can be reused or syndicated elsewhere.</p>
+        </article>
+      </section>
+
+      <!-- Aside: sidebar or related info -->
+      <aside>
+        <h3>Related Links</h3>
+        <ul>
+          <li><a href="#">HTML Basics</a></li>
+          <li><a href="#">CSS Guide</a></li>
+          <li><a href="#">JavaScript Tips</a></li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer: page footer info -->
+  <footer>
+    <p>&copy; 2025 My Simple Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+

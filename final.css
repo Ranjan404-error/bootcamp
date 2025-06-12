@@ -1,0 +1,54 @@
+/* General Page Styles */
+body 
+<link rel="stylesheet" href="style.css" />
+{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('https://images.unsplash.com/photo-1542831371-d531d36971e6') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Overlay for readability */
+#overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 100vh;
+  color: white;
+}
+
+/* Header and Footer */
+header, footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+/* Intro Section */
+.intro {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.intro h2 {
+  color: #f1c40f;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* Footer Text */
+footer p {
+  margin: 0;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home - Ranjan's Website</title>
+  <style>
+    /* Full screen background image */
+    body, html {
+      margin: 0; padding: 0; height: 100%;
+      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      animation: bgFade 20s infinite alternate;
+    }
+    @keyframes bgFade {
+      0% { filter: brightness(100%); }
+      100% { filter: brightness(90%); }
+    }
+    h1 {
+      font-size: 4rem;
+      background: rgba(255,255,255,0.7);
+      padding: 20px 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+    nav {
+      position: fixed;
+      top: 20px; right: 20px;
+    }
+    nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: 700;
+      color: white;
+      background: rgba(0,0,0,0.4);
+      padding: 10px 15px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: rgba(0,0,0,0.7);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="projects.html">Projects</a>
+    <a href="websites.html">Favourite Websites</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <h1>Welcome to Ranjan's Website</h1>
+</body>
+</html>
